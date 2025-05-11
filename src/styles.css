@@ -1,0 +1,430 @@
+/* body {
+  margin: 0;
+  font-family: Arial;
+}
+.light-theme {
+  background: #f0f0f0;
+  color: #222;
+}
+.dark-theme {
+  background: #222;
+  color: #f0f0f0;
+}
+header, footer {
+  padding: 10px;
+  background: #444;
+  color: #fff;
+}
+main, section {
+  padding: 20px;
+}
+button {
+  margin: 5px;
+} */
+
+
+
+
+/* global
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #f5f6f8;
+}
+.app-container nav.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+.nav-buttons button {
+  margin-left: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  background: #e2e6ea;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.nav-buttons .active {
+  background: #6c63ff;
+  color: #fff;
+}
+main {
+  padding: 2rem;
+}
+section h2 {
+  margin-bottom: 1rem;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+.card .subtitle {
+  color: #555;
+  margin-bottom: 1rem;
+}
+.inner-box {
+  background: #d6e4ff;
+  padding: 1rem;
+  border-radius: 4px;
+  margin: 1rem 0;
+}
+/* Light/Dark theme toggling */
+/* .light-theme .inner-box { background: #d6e4ff; }
+.dark-theme  .inner-box { background: #333; color: #eee; }
+body.dark-theme { background: #2b2b2b; color: #ddd; } */
+
+
+
+
+
+
+
+
+
+
+
+/* ThemeDemo section backgrounds */
+.theme-section {
+  padding: 20px;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Light theme */
+.theme-section.light {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+/* Dark theme */
+.theme-section.dark {
+  background-color: #222;
+  color: #f0f0f0;
+}
+
+/* Inner box also adapts */
+.inner-box {
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.theme-section.light .inner-box {
+  background-color: #e0e7ff;  /* light blue */
+  color: #1e293b;
+}
+
+.theme-section.dark .inner-box {
+  background-color: #334155;  /* dark slate */
+  color: #f1f5f9;
+}
+
+/* Button styling (optional) */
+.theme-section button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.theme-section.light button {
+  background-color: #3b82f6;
+  color: #fff;
+}
+
+.theme-section.dark button {
+  background-color: #6366f1;
+  color: #fff;
+}
+
+
+
+
+
+/* AUTH SECTION */
+
+
+
+
+/* AuthDemo Card form styling */
+.auth-section {
+  padding: 20px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.auth-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 4px;
+  font-weight: 500;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.auth-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #3b82f6;
+  color: #fff;
+  font-weight: 500;
+}
+
+.auth-form button:disabled {
+  background-color: #a5b4fc;
+  cursor: not-allowed;
+}
+
+.logout-wrap {
+  text-align: center;
+}
+
+.logout-wrap button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #ef4444;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* CART SECTION */
+
+
+/* Cart Section */
+.cart-section {
+  padding: 20px;
+}
+.cart-section h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.product-info h4 {
+  margin: 0 0 8px;
+}
+.product-info p {
+  margin: 0 0 12px;
+  font-weight: 500;
+}
+
+.product-card button {
+  align-self: stretch;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: #10b981;
+  color: #fff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Cart Summary Table */
+.cart-summary table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.cart-summary th,
+.cart-summary td {
+  padding: 12px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.cart-summary thead {
+  background-color: #f3f4f6;
+}
+
+.cart-summary tfoot {
+  background-color: #e5e7eb;
+}
+
+.cart-summary button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ef4444;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+
+
+/* Quantity controls */
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.qty-control button {
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 4px;
+  background-color: #3b82f6;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.qty-control span {
+  min-width: 24px;
+  text-align: center;
+}
+
+/* Remove and Clear buttons */
+.remove-btn,
+.clear-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+.remove-btn {
+  background-color: #ef4444;
+  color: white;
+}
+.clear-btn {
+  background-color: #374151;
+  color: white;
+}
+
+
+
+
+
+/* HEADER */
+
+
+
+
+
+
+
+
+
+
+.combined-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: var(--header-bg);
+  color: var(--header-fg);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Left */
+.header-left h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+/* Center Navigation */
+.header-nav {
+  display: flex;
+  gap: 12px;
+}
+
+.nav-btn {
+  padding: 6px 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.nav-btn.active {
+  border-bottom: 2px solid currentColor;
+}
+
+/* Right Controls */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.theme-toggle-btn {
+  font-size: 1.2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.welcome {
+  margin-right: 8px;
+  font-weight: 500;
+}
+
+.logout-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ef4444;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Theme variables */
+.light-theme {
+  --header-bg: #ffffff;
+  --header-fg: #222222;
+}
+
+.dark-theme {
+  --header-bg: #222222;
+  --header-fg: #f0f0f0;
+}
